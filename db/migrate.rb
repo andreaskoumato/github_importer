@@ -1,3 +1,6 @@
+# Creates SQLite tables and indexes for repositories, users, pull_requests, reviews.
+# Idempotent: uses if_not_exists and unique indexes on github_id to prevent duplicates.
+
 require_relative "../config/database"
 require "active_record"
 

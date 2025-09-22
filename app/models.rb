@@ -1,3 +1,9 @@
+# Defines ActiveRecord models and associations for the importer.
+# - Repository has many PullRequests
+# - PullRequest belongs to Repository and has many Reviews; also belongs_to :author (User)
+# - Review belongs to PullRequest and :author (User)
+# - User has many authored PullRequests and authored Reviews
+
 require_relative "../config/database"
 require "active_record"
 
